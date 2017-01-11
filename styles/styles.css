@@ -193,6 +193,11 @@ background-repeat: no-repeat;
 .block__slider{
 height: 575px;
 margin-top: 15px;
+position: relative;
+}
+.sl_one{
+position: absolute;
+bottom: 0;
 }
 .serv4 ul{
 list-style-type: circle;
@@ -219,13 +224,17 @@ padding: 15px 0;
 .aboutUs__block img{
 display: block;
 margin: 0 auto;
+width: 70%;
 }
 .aboutUs__block p {
 text-align: center;
 font-size: 12px;
+Color: #9c9c9c;
+margin-top: 15px;
 }
 .appli p{
 padding-bottom: 25px;
+Color: #9c9c9c;
 }
 .appli h2{
 padding-bottom: 15px;
@@ -238,4 +247,99 @@ display: block;
 max-width: 180px;
 margin: 0 auto;
 text-align: center;
+}
+/*FORM*/
+
+input[type],
+select,
+option{
+background-color: #fff;
+box-shadow: 1px 2px 7px rgba(133,133,133,.2), inset 0 0 3px rgba(133,133,133,.15);
+background-image: linear-gradient(to bottom, rgba(200,200,200,.15), rgba(213,213,213,.15) 54%, rgba(255,255,255,.15));
+border-radius: 7px;
+    border: none;
+font-size: 14px;
+padding: 10px 20px;
+padding-top: 8px;
+width: 100%;
+}
+input[type],
+select{
+margin-top: 15px
+}
+input[type="submit"]{
+background-color: #68ef5d;
+box-shadow: 1px 2px 7px rgba(140,231,155,.45);
+background-image: linear-gradient(to top, rgba(140,231,155,.7), rgba(140,231,155,0));
+color: #fff;
+max-width: 180px;
+text-align: center;
+margin: 10px auto;
+display: block;
+}
+
+.form .col-sm-10{
+padding-top: 15px;
+margin-top: 30px;
+}
+form h2,
+form p{
+text-align: center;
+}
+h3{
+color: #5f615e;
+font-weight: bold;
+font-style: italic;
+}
+.household{
+max-width: 210px;
+background-image: url(../images/%D0%91%D1%83%D0%BC%D0%B0%D0%B3%D0%B0.png);
+background-size: cover;
+padding: 15px;
+margin: 0 auto;
+position: relative;
+min-height: 235px;
+}
+.household .data{
+position: absolute;
+bottom: 15px;
+right: 15px;
+font-size: 6px;
+}
+.household p{
+font-size: 12px;
+color: #9c9c9a;
+padding: 10px 0;
+text-align: left;
+}
+/*SLIDER TWO*/
+
+/*RECOMMEND*/
+.greenDate{
+display: block;
+background-color: #c8f9c9;
+border-radius: 50%;
+color: white;
+text-align: center;
+padding: 12.5px 0;
+width: 35px;
+font-size: 10px;
+transition: .5s;
+box-shadow: 1px 2px 7px rgba(140,231,155,.45);
+}
+.active{
+background-color: #68ef5d;
+}
+.recommend img{
+max-width: 80%;
+display: block;
+margin: 0 auto;
+}
+.recom{
+background-image: url(../images/iconOtz.png);
+background-size: 15px;
+background-repeat: no-repeat;
+}
+.recomText{
+font-size: 12px;
 }
