@@ -101,8 +101,25 @@ header img{
 max-width: 100%;
 margin-top: 30px;
 }
-nav ul{
+nav{
+position: relative;
 font-size: 18px;
+}
+.navigation{
+position: absolute;
+bottom: -150px;
+left: 0;
+font-size: 12px;
+z-index: 9999;
+padding: 20px;
+display: none;
+}
+.navigation ul li{
+padding: 10px;
+line-height: 1em;
+display: block;
+text-align: left;
+
 }
 header .btn{
 width: 125px;
@@ -315,8 +332,8 @@ text-align: left;
 /*SLIDER TWO*/
 
 /*RECOMMEND*/
-.greenDate{
-display: block;
+a.greenDate{
+display: inline-block;
 background-color: #c8f9c9;
 border-radius: 50%;
 color: white;
@@ -331,15 +348,56 @@ box-shadow: 1px 2px 7px rgba(140,231,155,.45);
 background-color: #68ef5d;
 }
 .recommend img{
-max-width: 80%;
+max-width: 85%;
 display: block;
 margin: 0 auto;
+}
+.recomContainer{
+padding: 15px;
+min-height: 280xp
 }
 .recom{
 background-image: url(../images/iconOtz.png);
 background-size: 15px;
 background-repeat: no-repeat;
+font-size: 12px;
+color: #9c9c9a;
+padding-left: 20px;
 }
 .recomText{
+margin-top: 15px;
 font-size: 12px;
+margin-bottom: 15px;
+}
+.recomImg{
+margin-top: 15px;
+position: relative;
+margin-bottom: 15px;
+    }
+.recomImg a{
+ color: #c8f9c9;
+font-size: 18px;
+position: absolute;
+bottom: 5px;
+right: 40px;
+}
+.users{
+padding: 5px;
+padding-left: 30px;
+background-image: url(../images/woman_two.png);
+background-repeat: no-repeat;
+background-size: auto;
+background-position: top left -9px;
+}
+.data{
+font-size: 12px;
+color: #9c9c9a;
+}
+/*FOOTER*/
+footer{
+box-shadow: inset 0 0 10px rgba(0,0,0,.05);
+background-image: linear-gradient(122deg, rgba(200,200,200,.1), rgba(213,213,213,.1) 22%, rgba(255,255,255,.1));
+}
+footer img{
+max-width: 100%;
 }
