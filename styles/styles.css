@@ -436,7 +436,8 @@ padding-left: 10px;
 
 
 /*KV*/
-section.billboardKV{
+section.billboardKV,
+.billboardKompKV{
 background-image: url(../images/%D0%93%D0%95%D0%9D%D0%95%D0%A0%D0%90%D0%9B%D0%AC%D0%9D%D0%90%D0%AF-%D0%A3%D0%91%D0%9E%D0%A0%D0%9A%D0%90-%D0%9A%D0%92%D0%90%D0%A0%D0%A2%D0%98%D0%A0-%D0%A4%D0%9E%D0%9D.png);
 background-repeat: no-repeat;
 background-position: center center;
@@ -444,7 +445,7 @@ background-position: center center;
 background-size: cover;
 padding: 100px 0;
 }
-.billboard-block{
+.billboardKV .billboard-block{
 border: 5px solid #eed500;
 padding: 30px;
 position: relative;
@@ -508,6 +509,7 @@ border-radius: 5px;
 background-color: #fff;
 box-shadow: 0 10px 10px rgba(0,0,0,.05), inset 0 0 10px rgba(0,0,0,.05);
 background-image: linear-gradient(122deg, rgba(200,200,200,.1), rgba(213,213,213,.1) 22%, rgba(255,255,255,.1));
+    background-attachment:fixed;
 }
 td{
     text-align: center;
@@ -532,3 +534,102 @@ th{text-transform: uppercase;
 
 }
 
+.san{
+cursor: pointer;
+display: block;
+    margin: 0 auto;
+}
+.san:hover{
+color: #c8fac9;
+}
+.ul_san{
+    list-style: circle;
+    color: #9c9c9a;
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 25px;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+
+}
+.ul_san li{
+padding: 5px 0;
+}
+.billboardOF .billboard-block{
+border: 5px solid #63d631;
+padding: 30px;
+position: relative;
+}
+.billboardOF h2{
+font-size: 36px;
+color: #63d631;
+padding: 25px 0;
+} 
+.billboardOF p{
+color: #60625e;
+font-size: 12px;
+padding-bottom: 100px;
+}
+.billboardOF{
+    background-image: url(../images/officeBG.png);
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+background-size: cover;
+padding: 100px 0;
+}
+.horizontal{
+transform: scale(1, -1);
+}
+
+
+.billboardKompKV .billboard-block{
+border: 5px solid #d42541;
+padding: 30px;
+position: relative;
+}
+
+.billboardKompKV h2{
+font-size: 36px;
+color: #d42541;
+padding: 25px 0;
+} 
+.billboardKompKV p{
+color: #60625e;
+font-size: 12px;
+padding-bottom: 100px;
+}
+
+.contact{
+margin-top: 30px;
+    padding: 15px;
+}
+.contact i{
+color: #5f615e;
+}
+.contact h2{
+padding: 15px 0;
+}
+.contact p{
+padding-bottom: 15px;
+}
+.contact_frame{
+border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.05), inset 0 0 10px rgba(0,0,0,.05);
+}
+.mail{
+color: #9c9c9a;
+margin-left: 150px;
+}
+.location{
+color: #9c9c9a;
+    padding: 15px 0; 
+}
+.inst{
+color: #9c9c9a;
+    margin-left: 155px;
+}
+.vk{
+color: #5f615e;
+}
