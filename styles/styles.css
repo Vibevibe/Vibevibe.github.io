@@ -45,8 +45,6 @@ table {
 /*END RESER*/
 
 /*MAIN*/
-.container{
-}
 p{
 line-height: 15px;
 color: #60625e;
@@ -90,6 +88,12 @@ h2{
 text-transform: uppercase;
 font-weight: bold;
 font-size: 18px;
+}
+h4{
+font-weight: bold;
+font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px;
 }
 /*HEADER*/
 header{
@@ -149,7 +153,7 @@ background-position: top -50% center;
 
 
 .services .btn{
-width: 175px;
+width: 75%;
 display: block;
 margin: 0 auto;
 text-align: center;
@@ -158,12 +162,20 @@ bottom: 15px;
 left: 0;
 right: 0;
 }
+.sevices-min .btn{
+    padding: 5px 0;
+    color: #9c9c9a;
+}
 
 .services .block{
 padding-bottom: 15px;
 margin-top: 15px;
 height: 280px;
 position: relative;
+}
+
+.sevices-min .block{
+height: 180px;
 }
 .services h2{
 padding-top: 30px;
@@ -353,7 +365,6 @@ display: block;
 margin: 0 auto;
 }
 .recomContainer{
-padding: 15px;
 min-height: 280xp
 }
 .recom{
@@ -401,3 +412,123 @@ background-image: linear-gradient(122deg, rgba(200,200,200,.1), rgba(213,213,213
 footer img{
 max-width: 100%;
 }
+footer i{
+font-size: 14px;
+}
+footer{
+font-size: 12px;
+    padding: 15px;
+    margin-top: 15px;
+}
+footer a{
+color: #9c9c9a;
+}
+footer h2{
+padding: 12px
+}
+.ul{
+padding-top: 40px;
+}
+footer li{
+padding: 2px;
+padding-left: 10px;
+}
+
+
+/*KV*/
+section.billboardKV{
+background-image: url(../images/%D0%93%D0%95%D0%9D%D0%95%D0%A0%D0%90%D0%9B%D0%AC%D0%9D%D0%90%D0%AF-%D0%A3%D0%91%D0%9E%D0%A0%D0%9A%D0%90-%D0%9A%D0%92%D0%90%D0%A0%D0%A2%D0%98%D0%A0-%D0%A4%D0%9E%D0%9D.png);
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+background-size: cover;
+padding: 100px 0;
+}
+.billboard-block{
+border: 5px solid #eed500;
+padding: 30px;
+position: relative;
+}
+.billboardKV h2{
+font-size: 36px;
+color: #efd600;
+padding: 25px 0;
+} 
+.billboardKV p{
+color: #60625e;
+font-size: 12px;
+padding-bottom: 100px;
+}
+.collage{
+position: absolute;
+bottom: -100px;
+right: 55px;
+}
+.collage img{
+max-width: 175%;
+}
+.attendance p{
+text-align: center;
+padding-top: 15px;
+}
+.attendance h2{
+padding: 20px;
+}
+.attendance img{
+width: 33.3%;
+display: block;
+margin: 0 auto;
+border-radius: 5px;
+box-shadow: 5px 9px 10px rgba(0,0,0,.05);
+    margin-top: 40px;
+}
+
+
+
+/*TABLE*/
+
+
+.table__container{
+ width: 100%;
+  overflow-y: auto;
+  margin: 0 0 1em;
+}
+
+
+table{
+font-size: 12px;
+    color: #60625e;
+     border-collapse: separate;
+      border-spacing: 0 10px;
+    width: 100%;
+}
+tr{
+    height: 75px;
+border-radius: 5px;
+background-color: #fff;
+box-shadow: 0 10px 10px rgba(0,0,0,.05), inset 0 0 10px rgba(0,0,0,.05);
+background-image: linear-gradient(122deg, rgba(200,200,200,.1), rgba(213,213,213,.1) 22%, rgba(255,255,255,.1));
+}
+td{
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    padding: 15px;
+    background: none;
+    min-width: 80px;
+}
+.bgn{
+ background: none;
+}
+th{text-transform: uppercase;
+    background-color: #c8f4c9;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
