@@ -1,0 +1,4 @@
+[0114/122752:ERROR:exception_snapshot_win.cc(87)] thread ID 2960 not found in process
+[0114/122752:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
+[0114/175225:ERROR:exception_snapshot_win.cc(87)] thread ID 4628 not found in process
+[0114/175225:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed

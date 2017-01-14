@@ -49,6 +49,15 @@ p{
 line-height: 15px;
 color: #60625e;
 }
+a{
+color: #60625e;
+}
+a:hover{
+color:#63d631;
+}
+a:active{
+color: #00ac00;
+}
 body{
 font-family: "Open Sans" ;
 font-size: 14px;
@@ -77,13 +86,37 @@ background-color: #68ef5d;
 box-shadow: 1px 2px 7px rgba(140,231,155,.45);
 background-image: linear-gradient(to top, rgba(140,231,155,.7), rgba(140,231,155,0));
 color: #fff;
+    transition: .3s;
 }
 .btn-grey{
 background-color: #fff;
 box-shadow: 1px 2px 7px rgba(133,133,133,.2), inset 0 0 3px rgba(133,133,133,.15);
 background-image: linear-gradient(to bottom, rgba(200,200,200,.15), rgba(213,213,213,.15) 54%, rgba(255,255,255,.15));
-    
+    transition: .2s;
 }
+.btn-green:hover{
+color: #40c140;
+background: #fff;
+}
+.btn-grey:hover{
+    background: #fff;
+color: #40c140
+}
+.btn-green:active{
+
+}
+.activeBtn{
+color: #40c140;
+background: #fff;
+}
+.btn-grey:active{
+background-color: #68ef5d;
+box-shadow: 1px 2px 7px rgba(140,231,155,.45);
+background-image: linear-gradient(to top, rgba(140,231,155,.7), rgba(140,231,155,0));
+color: #fff;
+}
+
+
 h2{
 text-transform: uppercase;
 font-weight: bold;
@@ -146,12 +179,91 @@ background-repeat: no-repeat;
 -webkit-background-size: contain;
 background-size: contain;
 background-position: top -50% center;
+position: relative;
+}
+
+.prevSL{
+font-size: 25px;
+position: absolute;
+left: 5px;
+top: 50%;
+    color: #68ef5d;
+    z-index: 1;
+}
+.nextSL{
+font-size: 25px;
+position: absolute;
+right: 5px;
+top: 50%;
+color: #68ef5d;
+    z-index: 1;
+}
+.slideHeader{
+font-size: 30px;
+padding-bottom: 15px;
+}
+.sliderWrapper p{
+font-size: 18px;
+line-height: 1.2em;
+}
+
+
+/*==================================================*/
+
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    top: 50%;
+    width: 100%;
+    left: 15%;
+}
+.jcarousel-pagination{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+}
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width: 1000px
 }
 
 
 
 
 
+
+
+
+
+
+/*==================================================*/
 .services .btn{
 width: 75%;
 display: block;
@@ -344,28 +456,61 @@ text-align: left;
 /*SLIDER TWO*/
 
 /*RECOMMEND*/
-a.greenDate{
-display: inline-block;
-background-color: #c8f9c9;
-border-radius: 50%;
-color: white;
-text-align: center;
-padding: 12.5px 0;
-width: 35px;
-font-size: 10px;
-transition: .5s;
-box-shadow: 1px 2px 7px rgba(140,231,155,.45);
+.recommend{
+margin-bottom: 70px;
 }
-.active{
-background-color: #68ef5d;
+.recommend h2{
+padding: 15px 0 15px 5px;
 }
+.recommend ul {
+    max-width: 430px;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.recommend ul:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -2px;
+  width: 100%;
+  height: 5px;
+  background: #C5FCC5;
+  z-index: -1;
+}
+.recommend ul > li {
+  margin: 15px 0;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: #C5FCC5;
+  border-radius: 50%;
+  box-shadow: 1px 2px 7px rgba(140,231,155,.45);
+  position: relative;
+}
+.recommend ul > li:first-child {
+  background: #6CEE5A;
+}
+
+.recommend ul > li:last-of-type:before {
+  display: none;
+}
+/*========--========*/
+
+
+
 .recommend img{
 max-width: 85%;
 display: block;
 margin: 0 auto;
 }
 .recomContainer{
-min-height: 280xp
+padding: 15px;    
 }
 .recom{
 background-image: url(../images/iconOtz.png);
@@ -470,18 +615,26 @@ max-width: 175%;
 }
 .attendance p{
 text-align: center;
-padding-top: 15px;
 }
 .attendance h2{
 padding: 20px;
 }
 .attendance img{
-width: 33.3%;
+width: 80px;
+height: 80px;
 display: block;
 margin: 0 auto;
 border-radius: 5px;
 box-shadow: 5px 9px 10px rgba(0,0,0,.05);
     margin-top: 40px;
+    margin-bottom: 15px;
+}
+.attendance{
+    margin-bottom: 45px;
+
+}
+.dispNo{
+display: none;
 }
 
 
@@ -492,7 +645,6 @@ box-shadow: 5px 9px 10px rgba(0,0,0,.05);
 .table__container{
  width: 100%;
   overflow-y: auto;
-  margin: 0 0 1em;
 }
 
 
@@ -534,12 +686,15 @@ th{text-transform: uppercase;
 
 }
 
-.san{
+.san,
+.kitch{
 cursor: pointer;
 display: block;
     margin: 0 auto;
 }
-.san:hover{
+
+.san:hover,
+.kitch:hover{
 color: #c8fac9;
 }
 .ul_san{
@@ -579,9 +734,7 @@ background-position: center center;
 background-size: cover;
 padding: 100px 0;
 }
-.horizontal{
-transform: scale(1, -1);
-}
+
 
 
 .billboardKompKV .billboard-block{
@@ -601,6 +754,79 @@ font-size: 12px;
 padding-bottom: 100px;
 }
 
+.billboardPodKV .billboard-block{
+border: 5px solid #00b7f4;
+padding: 30px;
+position: relative;
+}
+.billboardPodKV p{
+color: #60625e;
+font-size: 12px;
+padding-bottom: 15px;
+}
+.billboardPodKV h2{
+font-size: 36px;
+color: #00b7f4;
+padding:  15px 0;
+} 
+.billboardPodKV{
+    background-image: url(../images/%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B-%D0%BD%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-%D0%91%D0%93.png);
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+background-size: cover;
+padding: 100px 0;
+}
+
+.billboardPodOf{
+     background-image: url(../images/%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D1%8E%D1%89%D0%B0%D1%8F-%D1%83%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D0%BE%D1%84%D0%B8%D1%81%D0%BE%D0%B2.png);
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+background-size: cover;
+padding: 100px 0;
+}
+.billboardPodOf h2{
+    font-size: 36px;
+color: #421b48;
+padding:  15px 0;
+}
+.billboardPodOf p{
+color: #60625e;
+font-size: 12px;
+padding-bottom: 100px;
+}
+.billboardPodOf .billboard-block{
+border: 5px solid #421b48;
+padding: 30px;
+position: relative;
+}
+.billboardBuildKV{
+     background-image: url(../images/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%83%D0%B1%D0%BE%D1%80%D0%BA%D0%B0.png);
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+background-size: cover;
+padding: 100px 0;
+}
+.billboardBuildKV h2{
+        font-size: 36px;
+color: #f9830d;
+padding:  15px 0;
+}
+.billboardBuildKV p{
+color: #60625e;
+font-size: 12px;
+padding-bottom: 100px;
+}
+.billboardBuildKV .billboard-block{
+border: 5px solid #f9830d;
+padding: 30px;
+position: relative;
+}
+
+
+/*CONTACT*/
 .contact{
 margin-top: 30px;
     padding: 15px;
@@ -632,4 +858,134 @@ color: #9c9c9a;
 }
 .vk{
 color: #5f615e;
+}
+
+/*PRICE*/
+.price img{
+    width: 20%;
+    float: left;
+}
+.price .row{
+    margin: 30px 0;
+}
+.price .block{
+    padding: 15px;
+}
+.price p{
+padding: 15px;
+    font-size: 12px;
+}
+.price .btn{
+    bottom: 15px;
+    width: 20%;
+    margin-top: 15px;
+}
+.price .btn-green{
+margin-left: 20px;
+}
+.price .table__container{
+width: 80%;
+margin-left: 20%;
+}
+.price .table__container h2{
+padding: 15px;
+}
+/*MODAL*/
+
+#modal_form {
+	border-radius: 5px;
+	position: fixed; 
+	top: 45%; 
+	left: 50%; 
+	margin-top: -150px;
+	margin-left: -150px; 
+	display: none; 
+	opacity: 1; 
+	z-index: 5; 
+	padding: 20px;
+}
+#modal_form input{
+height: 30px;
+    margin: 5px 0;
+}
+#modal_form form{
+width: 50%;
+    margin: 0 auto;
+}
+#modal_form button{
+width: 100%;
+    margin-top: 15px;
+}
+
+#modal_form h2,
+#modal_form p{
+text-align: center;
+    padding: 5px;
+}
+#modal_form p{
+color: #9c9c9a;
+}
+
+#modal_form #modal_close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+    color: #68ef5d;
+    font-size: 18px;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3;
+	position:fixed;
+	background-color:#000; 
+	opacity:0.8; 
+	-moz-opacity:0.8; 
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+	display:none;
+}
+
+
+
+/*==========================*/
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #6c6c6c;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.slider ul {
+    width: 20000em;
+    position: relative;
+    height: 300px;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.slider li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width: 300px;
+    height: 300px;
 }
