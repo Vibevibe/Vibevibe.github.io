@@ -68,6 +68,9 @@ font-size: 30px;
 margin-top: 15px;
 padding-bottom: 10px;
 }
+h2{
+    line-height: 1.5;
+}
 .block{
 border-radius: 5px;
 	background-color: #fff;
@@ -144,23 +147,50 @@ font-size: 18px;
 }
 .navigation{
 position: absolute;
-bottom: -150px;
+bottom: -190px;
 left: 0;
 font-size: 12px;
-z-index: 9999;
+z-index: 5;
 padding: 20px;
 display: none;
 }
 .navigation ul li{
 padding: 10px;
-line-height: 1em;
+line-height: 1.4em;
 display: block;
 text-align: left;
-
 }
+
+.linkApGenCl{
+    border-bottom: 2px solid #eed500;
+    padding-bottom: 2px;
+}
+.linkApComCl{
+     border-bottom: 2px solid #d42641;
+    padding-bottom: 2px;
+}
+.linkApAftCl{
+    border-bottom: 2px solid #ff8001;
+    padding-bottom: 2px;
+}
+.linkApMainCl{
+    border-bottom: 2px solid #00b7f3;
+    padding-bottom: 2px;
+}
+.linkOffGenCl{
+     border-bottom: 2px solid #63d631;
+    padding-bottom: 2px;
+}
+.linkOffMainCl{
+     border-bottom: 2px solid #3e1746;
+    padding-bottom: 2px;
+}
+
+
 header .btn{
-width: 125px;
+width: 45%;
 text-align: center;
+padding: 5px 0; 
 }
 nav i{
 padding-right:  5px;
@@ -221,13 +251,13 @@ Position must be relative!
     position: relative;
     overflow: hidden;
     top: 50%;
-    width: 100%;
+    width: 555px;
     left: 15%;
 }
 .jcarousel-pagination{
     position: absolute;
     bottom: 15px;
-    left: 50%;
+    left: 47%;
 }
 /*
 This is the container of the carousel items.
@@ -248,12 +278,18 @@ that the width is big enough to contain all items.
 These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
 */
-.jcarousel li {
-    /* Required only for block elements like <li>'s */
-    float: left;
-    width: 1000px
-}
 
+.carouselPagination{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background-color:#c8f9c9;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.carouselPagination.active{
+    background-color: #68ef5d;
+}
 
 
 
@@ -273,6 +309,7 @@ position: absolute;
 bottom: 15px;
 left: 0;
 right: 0;
+font-size: 14px;
 }
 .sevices-min .btn{
     padding: 5px 0;
@@ -282,12 +319,36 @@ right: 0;
 .services .block{
 padding-bottom: 15px;
 margin-top: 15px;
+
 height: 280px;
 position: relative;
+    z-index: 2;
 }
-
+.big-serv-img{
+    position:absolute;
+    display:inline;
+    width:190px;
+    height:190px;
+    bottom:30px;
+    right:0;
+ }
+ .small-serv{
+     position:absolute;
+     display:inline;
+     width:100px;
+     height:100px;
+     bottom:30px;
+     right:25px;
+ }
 .sevices-min .block{
 height: 180px;
+}
+.min-serv-img{
+    width: 80%;
+    position: absolute;
+    right: -5px;
+    bottom:20px;
+z-index: -9999;
 }
 .services h2{
 padding-top: 30px;
@@ -296,39 +357,6 @@ width: 50%;
 }
 .serv4 h2{
 width: 80%;
-}
-.serv1{
-height: 100%;
-    background-image: url(../images/office.png);
-background-position: bottom right -15px;
--webkit-background-size: cover;
-background-size: 85%;
-background-repeat: no-repeat;
-}
-.serv2{
-height: 100%;
-    background-image: url(../images/room.png);
-background-position: bottom right;
--webkit-background-size: cover;
-background-size: 75%;
-background-repeat: no-repeat;
-}
-.serv3{
-height: 100%;
-    background-image: url(../images/cimento.png);
-background-position: bottom 10px right;
--webkit-background-size: cover;
-background-size: 85%;
-    background-repeat: no-repeat;
-}
-
-    .serv4{
-height: 100%;
-    background-image: url(../images/123.png);
-background-position: bottom 10px right 20px;
--webkit-background-size: cover;
-background-size: 40%;
-background-repeat: no-repeat;
 }
 
 .block__slider{
@@ -340,26 +368,29 @@ position: relative;
 position: absolute;
 bottom: 0;
 }
-.serv4 ul{
+.services ul{
 list-style-type: circle;
+    color: #9c9c9a;
 width: 80%;
 margin-left: 40px;
-margin-top: 12px;
+margin-top: 10px;
 }
-.serv4 li{
-padding: 3px 0;
+.services li{
+padding-bottom: 3px;
 }
-.serv4 a{
+.services a{
 color: #9c9c9a;
 }
 
 /*ABOUT US*/
-.aboutUs{
+.aboutUs p{
 padding: 15px;
 max-width: 880px;
+line-height: 1.3em;
 }
 .aboutUs h2{
 padding: 15px 0;
+margin-top: 15px;
 
 }
 .aboutUs__block img{
@@ -463,6 +494,7 @@ margin-bottom: 70px;
 padding: 15px 0 15px 5px;
 }
 .recommend ul {
+    margin-top: 15px;
     max-width: 430px;
   font-size: 10px;
   text-align: center;
@@ -503,9 +535,9 @@ padding: 15px 0 15px 5px;
 /*========--========*/
 
 
-
 .recommend img{
-max-width: 85%;
+width: 95%;
+height: 190px;
 display: block;
 margin: 0 auto;
 }
@@ -524,6 +556,8 @@ padding-left: 20px;
 margin-top: 15px;
 font-size: 12px;
 margin-bottom: 15px;
+    width: 95%;
+height: 190px;
 }
 .recomImg{
 margin-top: 15px;
@@ -531,11 +565,11 @@ position: relative;
 margin-bottom: 15px;
     }
 .recomImg a{
- color: #c8f9c9;
+ color: #8ce79b;
 font-size: 18px;
 position: absolute;
 bottom: 5px;
-right: 40px;
+right: 20px;
 }
 .users{
 padding: 5px;
@@ -553,6 +587,7 @@ color: #9c9c9a;
 footer{
 box-shadow: inset 0 0 10px rgba(0,0,0,.05);
 background-image: linear-gradient(122deg, rgba(200,200,200,.1), rgba(213,213,213,.1) 22%, rgba(255,255,255,.1));
+    margin-top: 30px;
 }
 footer img{
 max-width: 100%;
@@ -563,16 +598,16 @@ font-size: 14px;
 footer{
 font-size: 12px;
     padding: 15px;
-    margin-top: 15px;
 }
 footer a{
 color: #9c9c9a;
 }
 footer h2{
-padding: 12px
+padding-bottom: 15px;
+padding-left: 10px;
 }
 .ul{
-padding-top: 40px;
+margin-top: 42px;
 }
 footer li{
 padding: 2px;
@@ -896,9 +931,8 @@ padding: 15px;
 	border-radius: 5px;
 	position: fixed; 
 	top: 45%; 
-	left: 50%; 
 	margin-top: -150px;
-	margin-left: -150px; 
+
 	display: none; 
 	opacity: 1; 
 	z-index: 5; 
@@ -968,7 +1002,7 @@ This is the container of the carousel items.
 You must ensure that the position is relative or absolute and
 that the width is big enough to contain all items.
 */
-.slider ul {
+.jcarousel-list {
     width: 20000em;
     position: relative;
     height: 300px;
@@ -983,9 +1017,207 @@ that the width is big enough to contain all items.
 These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
 */
-.slider li {
+.jcarousel-item{
     /* Required only for block elements like <li>'s */
     float: left;
-    width: 300px;
+    width: 555px;
     height: 300px;
+}
+.workers-carousel {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    padding:10px 10px;
+}
+.workers-list {
+    width: 20000em;
+    position: relative;
+    height: 300px;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.workers-item{
+    position:relative;
+    /* Required only for block elements like <li>'s */
+    float: left;
+
+    height: 300px;
+    width:390px;
+    padding: 0 15px;
+}
+.workers-item .thumbnail{
+    border:none;
+    width: 100%;
+    padding: 7px;
+    position: relative;
+}
+.thumbnail a{
+position: absolute;
+    color: #8ce79b;
+font-size: 18px;
+position: absolute;
+bottom: 45px;
+right: 15px;
+}
+.workers-item .thumbnail img{
+    display: block;
+    width: 100%;
+    height: auto !important;
+}
+
+.workers-item .thumbnail .caption{
+    text-align: center;
+}
+.workerPrevSL{
+    font-size: 25px;
+    position: absolute;
+    left: 10px;
+    top: 35%;
+    color: #68ef5d;
+    z-index: 1;
+}
+.workerNextSL{
+    font-size: 25px;
+    position: absolute;
+    right: -10px;
+    top: 35%;
+    color: #68ef5d;
+    z-index: 100;
+}
+.workers{
+    margin-top:30px;
+}
+.workers h2{
+    display:block;
+    width:194px;
+}
+/*WORK*/
+.work{
+    position: relative;
+}
+.work h2{
+    margin-top: 35px;
+    padding-left: 25px;
+    color: #5f615e;
+}
+.workers-carousel {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    padding:10px 10px;
+}
+.workers-list {
+    width: 20000em;
+    position: relative;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work .workers-item{
+    position:relative;
+    float: left;
+    height:auto;
+    width:390px;
+}
+.work .workers-item .thumbnail{
+    border:none;
+    width: 100%;
+    padding: 7px;
+    position: relative;
+}
+.before a,
+.after a{
+position: absolute;
+    color: #8ce79b;
+font-size: 18px;
+position: absolute;
+bottom: 35px;
+right: 5px;
+}
+.work .workers-item .thumbnail img{
+    display: block;
+    width: 100%;
+    height: auto !important;
+    border-radius: 5px;
+}
+.work .workers-item{
+    margin-right: 25px;
+    padding: 0;
+    width: auto;
+  
+}
+
+.workers-item .thumbnail .caption{
+    text-align: center;
+}
+.work .workerPrevSL{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    color: #68ef5d;
+    z-index: 1;
+    left: -10px;
+}
+
+.work .workerNextSL{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    color: #68ef5d;
+    z-index: 100;
+}
+.before,
+.after{
+    float: left;
+    position: relative;
+}
+.after{
+    margin-left: 12px;
+}
+@media (max-width: 1200px){
+    header h1{
+        font-size: 24px;
+    }
+}
+@media(max-width: 1090px) {
+    header h1{
+        font-size: 19px;
+        margin-top: 22px;
+    }
+    header .btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    header nav{
+        margin-top: 20px;
+    }
+    header .logo{
+    margin-top: 25px;
+    }
+    .navigation{
+        bottom: -235px;
+    }
+    .recomContainer{
+        margin-top: 15px;
+    }
+}
+@media(max-width: 845px) {
+    header{
+        text-align: center;
+    }
+    nav li{
+    padding: 15px 0;
+    }
 }
