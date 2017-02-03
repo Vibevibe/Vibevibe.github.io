@@ -19,8 +19,10 @@ $('#btnNav').click(function(){
     
     
     $('.price .table__container').hide();
+    
     $(".btn-green").click(function(){
-        $(this).next(".table__container").slideToggle(500);
+        var father = $(this).parent();
+        father.next(".table__container").slideToggle(500);
         $(this).toggleClass("activeBtn");
          return false;
     });
@@ -117,6 +119,7 @@ $('#btnNav').click(function(){
             target: '+=1',
             carousel: wcarousel
         });
+        //WORK SLIDER
         $('.work .workers-carousel')
             .on('jcarousel:create jcarousel:reload', function() {
                 var element = $(this),
@@ -153,8 +156,6 @@ $('#btnNav').click(function(){
             carousel: wcarousel
         });
     });
-    //workers slider
-
 });
 
 

@@ -903,24 +903,30 @@ color: #5f615e;
 .price .row{
     margin: 30px 0;
 }
+
+.float{
+    margin-left: 20%;
+    width: 80%;
+}
+
 .price .block{
     padding: 15px;
+    position: relative;
 }
 .price p{
 padding: 15px;
     font-size: 12px;
 }
 .price .btn{
-    bottom: 15px;
     width: 20%;
-    margin-top: 15px;
+    margin-top: 15px; 
 }
 .price .btn-green{
 margin-left: 20px;
 }
 .price .table__container{
-width: 80%;
-margin-left: 20%;
+width: 100%;
+    float: none;
 }
 .price .table__container h2{
 padding: 15px;
@@ -1158,6 +1164,7 @@ right: 5px;
     width: auto;
   
 }
+
 
 .workers-item .thumbnail .caption{
     text-align: center;
