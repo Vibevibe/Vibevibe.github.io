@@ -47,7 +47,7 @@ table {
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.billboard{
+#billboard{
     background-image: url(%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D1%8F1.jpg);
     background-attachment: fixed;
     background-position: center center;
@@ -55,16 +55,11 @@ body{
     background-size: cover;
     height: 100vh
 }
-.head{
-    background-color: linear-gradient(to right #FFFEF5);
-    border-radius: 5px;
-}
 header{
     position: fixed;
     z-index: 2;
     left: 0;
     right: 0;
-   
 }
 
 nav{
@@ -82,11 +77,15 @@ nav li{
 nav li a{
     display: block;
     color: white;
+    padding-bottom: 5px;
 }
-nav li a:hover{
+
+nav li a:hover,
+nav li a.active{
     color: grey;
+    border-bottom: 2px solid grey;
 }
-.billboard h2{
+#billboard h2{
     margin-top: 10%;
 }
 h2{
@@ -101,31 +100,73 @@ p{
     padding-top: 5em;
     text-align: center;
 }
-.porf{
+#porf{
     background-image: url(%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D1%8F2.jpg);
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
     height: 100vh;
 }
-.porf h2{
+#porf h2{
     float: right;
     margin-bottom: 10px;
 }
-.porf p{
+#porf p{
     margin: 0;
     padding: 5px;
 }
 .block{
     background-color: rgba(255,255,255, .3);
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
 }
-.porf img{
+#porf img{
     width: 95%;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
-    height: 37vh
+    height: 35vh;
+}
+#call{
+    height: 100vh;
+}
+#call i{
+    margin: 0 auto;
+   margin-bottom: 30px;
+}
+#call h2{
+    color: currentColor;
+    margin-bottom: 30px;
+    border-bottom: 5px solid black;
+    padding-bottom: 15px;
+}
+#call p{
+    color: currentColor;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#call a{
+    font-size: 40px;
+    color: currentColor;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    transition: .6s;
+    margin-bottom: 30px;
+}
+#call a:hover{
+    background-color: aqua;
+}
+footer{
+    background-color: black;
+    padding: 15px;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+    float: left;
 }
