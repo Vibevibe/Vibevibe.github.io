@@ -48,7 +48,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .billboard{
-    background-image: url(https://pixabay.com/get/e83db70821fd063ed1534705fb094292e677e0d01dac10459df6c07da5ebb5ba/blur-1867997_1920.jpg);
+    background-image: url(%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D1%8F1.jpg);
     background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
@@ -102,7 +102,7 @@ p{
     text-align: center;
 }
 .porf{
-    background-image: url(https://pixabay.com/get/e83db50e2df0093ed1534705fb094292e677e0d01dac10459df6c07da1ecbcba/notebook-1841548_1920.jpg);
+    background-image: url(%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D1%8F2.jpg);
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
