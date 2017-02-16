@@ -65,7 +65,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #f3f3f3;
+    background: rgba(213, 219, 129, .2);
 }
 
 a:hover,
@@ -239,7 +239,7 @@ Iframe {width: 100%; border: none;}
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 button.btn-primary {
-    background: #ef7351 !important;
+    background: #f04a24 !important;
     transition: 0.4s ease all;
 }
 
@@ -322,8 +322,8 @@ ul.nav.navbar-nav.navbar-right li {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a.active {
-    color: #ef7351;
-    border-bottom: 2px solid #ef7351;
+    color: #EDBB48;
+    border-bottom: 2px solid #EDBB48;
     background: transparent;
 }
 
@@ -340,33 +340,6 @@ ul.nav.navbar-nav.navbar-right li {
     background-color: #fff;
 }
 
-.navbar-nav > li:hover .dropdown-menu {
-    display: block;
-}
-
-.navbar-nav > li > ul.dropdown-menu {
-    background: #eee;
-    border: none;
-    left: 0;
-    border-top: 2px solid #ef7351;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    transition: all 0.5s ease;
-    top: 97%;
-}
-
-ul.nav.navbar-nav.navbar-right li ul.dropdown-menu li {
-    padding: 0;
-    border: none;
-}
-
-.navbar-nav > li > ul.dropdown-menu a {
-    padding: 10px 15px;
-    text-align: left;
-    font-size: 13px;
-    line-height: 24px;
-}
 
 /* 4. Banner
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -443,7 +416,7 @@ h1.main_titl {
     margin-top: 0;
     display: block;
     text-align: center;
-    color: #fff;
+    color: #EDBB48;
     text-transform: uppercase;
     text-shadow: 0px 1px 3px #333;
     font-weight: bold;
@@ -454,7 +427,7 @@ h4.sub_titl {
     display: block;
     text-align: center;
     text-shadow: 0px 1px 3px #333;
-    color: #fff;
+    color: #D5DB81;
     font-style: italic;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
@@ -685,6 +658,7 @@ h1.pag_titl {
 
 section#sidebar h3.main_titl.text-left {
     border: 0;
+    color: #563232;
 }
 
 section#sidebar .titl_sec {
@@ -1008,16 +982,16 @@ section#srch_slide {
 
 .titl_sec h3.main_titl {
     display: inline-block;
-    border-bottom: 2px solid #ef7351;
+    border-bottom: 2px solid #EDBB48;
 }
 
 .titl_sec h3.link_titl a {
-    color: #0e4f71;
+    color: #F04A24;
     text-decoration: none;
 }
 
 .titl_sec h3.link_titl a:hover {
-    color: #ef7351;
+    color:#F04A24;
 }
 
 .panel.panel-default {
@@ -1060,7 +1034,7 @@ a.btn.btn_trans {
     height: 100%;
     top: 0;
     text-align: center;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(86, 50, 50, .9);
     position: absolute;
     opacity: 0;
     transition: all 0.5s ease;
@@ -1143,9 +1117,9 @@ section#feat_propty .panel.panel-default:hover h3.sec_titl {
 }
 
 h3.sec_titl {
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
-    color: #0e4f71;
+    color:#A6805B;
     margin-bottom: 20px;
 }
 
@@ -1160,7 +1134,7 @@ h3.sec_titl a:hover {
 
 p.sec_desc {
     font-size: 13px;
-    color: #777;
+    color: #563232;
     line-height: 21px;
     margin-bottom: 20px;
 }
@@ -1384,7 +1358,7 @@ section#subscribe {
     padding: 0 20px;
     border-radius: 0;
     border: 0;
-    background: #ef7351;
+    background: #F04A24;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1444,7 +1418,7 @@ section#clients .owl_col .mid_img img {
 }
 
 .footer_top {
-    background-color: #161e22;
+    background-color: #A6805B;
 }
 
 h2.foot_title {
@@ -1556,7 +1530,7 @@ ul.cont_info p {
 }
 
 .footer_copy_right {
-    background: #101619;
+    background: #563232;
 }
 
 .footer_copy_right p {
@@ -1948,7 +1922,7 @@ a.comm_repl {
     font-size: 13px;
     font-weight: bold;
     padding: 0 20px;
-    background: #ef7351;
+    background: #f04a24;
     border: 0;
     text-transform: uppercase;
 }
