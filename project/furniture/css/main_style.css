@@ -427,7 +427,7 @@ h4.sub_titl {
     display: block;
     text-align: center;
     text-shadow: 0px 1px 3px #333;
-    color: #D5DB81;
+    color:#fff;
     font-style: italic;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
@@ -565,7 +565,7 @@ header.bread_crumb .pag_titl_sec {
 }
 
 h1.pag_titl {
-    color: #fff;
+    color: #F04A24;
     text-transform: uppercase;
     text-shadow: 0px 1px 3px #333;
 }
@@ -580,16 +580,16 @@ h1.pag_titl {
 }
 
 .pg_links p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .pg_links {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .pg_links p.lnk_pag,
 .pg_links p.lnk_pag a {
-    color: #fff;
+    color: #A6805B;
     display: inline-block;
     margin-bottom: 0;
     line-height: 44px;
@@ -1005,6 +1005,9 @@ section#srch_slide {
     position: relative;
     border-bottom: 2px solid transparent;
 }
+.panel-image img{
+    height: 240px;
+}
 
 .sal_labl {
     position: absolute;
@@ -1418,7 +1421,7 @@ section#clients .owl_col .mid_img img {
 }
 
 .footer_top {
-    background-color: #A6805B;
+    background-color: #301c1c;
 }
 
 h2.foot_title {
@@ -1438,7 +1441,7 @@ h2.foot_title:after {
     background: #fff;
 }
 
-.col-md-3.abt_sec p,
+.col-md-4.abt_sec p,
 ul.tweets li,
 ul.cont_info li {
     font-size: 12px;
@@ -1530,7 +1533,7 @@ ul.cont_info p {
 }
 
 .footer_copy_right {
-    background: #563232;
+    background: #1c1010;
 }
 
 .footer_copy_right p {
@@ -1580,6 +1583,7 @@ div#slide_pan .owl-controls.clickable {
 section#lates_news .panel-body:hover p.readmore a,
 section#lates_news .panel-body:hover h3.sec_titl {
     color: #ef7351;
+    float: right;
 }
 
 .dat_labl {
@@ -2254,7 +2258,7 @@ section#abt_sec .titl_sec {
 }
 
 .progress-bar {
-    background-color: #ef7351;
+    background-color:#D5DB81;
     position: relative;
     animation: grower 5s ease;
     -moz-animation: grower 5s ease;
@@ -2332,7 +2336,7 @@ section#abt_sec .titl_sec {
 
 h3.fun_num {
     font-size: 20px;
-    color: #0e4f71;
+    color: #F04A24;
     text-transform: uppercase;
     line-height: 1;
     margin: 20px 0 10px;
@@ -2389,7 +2393,7 @@ div#pag-carousel .owl_col .mid_img img {
 }
 
 .skill_sec .serv_col h3.fun_num {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .skill_sec .serv_col h3.fun_num:hover {
@@ -2398,7 +2402,7 @@ div#pag-carousel .owl_col .mid_img img {
 
 .skill_sec .serv_col p.desc {
     font-size: 12px;
-    color: #777;
+    color:#563232;
     line-height: 1.75;
     text-transform: capitalize;
 }
