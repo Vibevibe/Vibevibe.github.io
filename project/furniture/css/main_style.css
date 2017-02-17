@@ -1067,11 +1067,11 @@ section#feat_propty .panel.panel-default:hover a.btn.btn_trans {
 }
 
 section#feat_propty .panel.panel-default:hover .panel-image {
-    border-bottom: 2px solid #ef7351;
+    border-bottom: 2px solid #f04a24;
 }
 
 section#feat_propty .panel.panel-default:hover h3.sec_titl {
-    color: #ef7351;
+    color: #f04a24;
 }
 
 .row.prlist_sec .panel.panel-default:hover .img_hov_eff {
@@ -1166,13 +1166,13 @@ section#feat_propty .panel-body {
 
 .panel_bottom p.price {
     font-size: 13px;
-    color: #ef7351;
+    color: #f04a24;
     font-weight: bold;
     line-height: 35px;
 }
 
 p.readmore a {
-    color: #989b9c;
+    color: white;
     text-decoration: none;
 }
 
@@ -1181,9 +1181,10 @@ p.readmore a:hover {
 }
 
 .panel_bottom p.readmore {
-    float: left;
+    float: right;
     width: 65%;
-    line-height: 35px;
+/*    line-height: 35px;*/
+    text-align: center;
 }
 
 .share_btn {
@@ -1322,10 +1323,9 @@ section#talen_agent .panel.panel-default:hover .panel_hidd {
 
 .news_dtd p,
 p.readmore {
-    font-family: georgia;
-    font-size: 12px;
+    font-family: inherit;
+    font-size: 14px;
     color: #989b9c;
-    font-style: italic;
     margin-bottom: 0;
 }
 
@@ -1409,6 +1409,7 @@ section#clients .owl_col .mid_img img {
     margin: 0 auto;
     width: 95%;
 }
+
 
 /* 14. Footer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1678,13 +1679,14 @@ p.readmore2 a {
     background: #fff;
     line-height: 32px;
     display: inline-block;
-    color: #0e4f71;
+    color: #563232;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    transition: .5s;
 }
 
 .pagin ul li a.active,
 .pagin ul li a:hover {
-    background: #ef7351;
+    background: #f04a24;
     color: #fff;
 }
 
@@ -2119,6 +2121,7 @@ section#prop_detal .titl_sec {
     padding: 25px;
     background: #fff;
 }
+
 
 /* 18. Testimonial Sec 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -2662,6 +2665,20 @@ section#wrng_pg .btns a.orn_btn {
     margin-bottom: 40px;
 }
 
+.order{
+    text-align: center;
+    background: #F04A24;
+    color: white;
+    transition: .5s;
+    line-height: 35px;
+    display: block;
+    border: 2px solid transparent
+}
+.order:hover{
+    background: #fff; 
+    color: white;
+    border-color: #F04A24;
+}
 /* 23. Responsive Styles 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
