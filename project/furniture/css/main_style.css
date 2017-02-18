@@ -426,7 +426,7 @@ h4.sub_titl {
     margin-bottom: 0;
     display: block;
     text-align: center;
-    text-shadow: 0px 1px 3px #333;
+    text-shadow: 1px 1px 3px black;
     color:#fff;
     font-style: italic;
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -1170,7 +1170,15 @@ section#feat_propty .panel-body {
     font-weight: bold;
     line-height: 35px;
 }
-
+.shop_bill p.readmore a{
+    color: #f04a24;
+    margin-right: 15px;
+    float: right;
+    transition: .5s;
+}
+.shop_bill p.readmore a:hover{
+    color: #563232
+}
 p.readmore a {
     color: white;
     text-decoration: none;
@@ -1408,6 +1416,7 @@ section#clients .owl_col .mid_img {
 section#clients .owl_col .mid_img img {
     margin: 0 auto;
     width: 95%;
+    height: 200px;
 }
 
 
@@ -2145,7 +2154,7 @@ section#testim {
 
 blockquote {
     border: 0;
-    font-size: 15px;
+    font-size: 13px;
     color: #777;
     font-style: italic;
     font-family: Georgia;
@@ -2194,12 +2203,13 @@ blockquote:before {
 h6.auth_nam {
     font-size: 14px;
     color: #0e4f71;
-    float: right;
-    width: 77%;
+/*    float: right;*/
+    width: 100%;
     text-transform: uppercase;
     margin-bottom: 0;
     padding: 5px 0;
-    padding-left: 15px;
+/*    padding-left: 15px;*/
+    text-align: center;
 }
 
 span.auth_pos {
@@ -2678,6 +2688,11 @@ section#wrng_pg .btns a.orn_btn {
     background: #fff; 
     color: white;
     border-color: #F04A24;
+}
+.readmore_link{
+    display: block;
+    color: #F04A24;
+    line-height: 35px;
 }
 /* 23. Responsive Styles 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
