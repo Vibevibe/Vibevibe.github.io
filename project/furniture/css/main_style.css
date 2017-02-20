@@ -65,7 +65,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: rgba(213, 219, 129, .2);
+    background: rgba(237, 187, 72, .05);
 }
 
 a:hover,
@@ -284,9 +284,9 @@ select.form-control {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 nav.navbar {
-    border: none;
+    background:#fff;
     margin-bottom: 0;
-    background: #fff;
+    
 }
 
 a.navbar-brand {
@@ -322,8 +322,8 @@ ul.nav.navbar-nav.navbar-right li {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a.active {
-    color: #EDBB48;
-    border-bottom: 2px solid #EDBB48;
+    color: #f04a24;
+    border-bottom: 2px solid #f04a24;
     background: transparent;
 }
 
@@ -584,12 +584,12 @@ h1.pag_titl {
 }
 
 .pg_links {
-    background: rgba(0, 0, 0, 0.1);
+    background: #f04a24;
 }
 
 .pg_links p.lnk_pag,
 .pg_links p.lnk_pag a {
-    color: #A6805B;
+    color: #fff;
     display: inline-block;
     margin-bottom: 0;
     line-height: 44px;
@@ -828,9 +828,9 @@ p.infos a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 section#srch_slide {
-    margin-top: -70px;
     position: relative;
     z-index: 11;
+    width: 100%;
 }
 
 .srch_frm {
@@ -898,11 +898,13 @@ section#srch_slide {
     right: 30px;
     bottom: 30px;
     padding: 25px;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(86, 50, 50, 0.85);
+    border-radius: 3px;
 }
 
 .slide-info p.sli_price {
-    color: #ef7351;
+    color: #f04a24;
+    font-weight: bold;
 }
 
 .slide-info p.sli_titl {
@@ -910,7 +912,7 @@ section#srch_slide {
 }
 
 .slide-info p.sli_desc {
-    color: #959595;
+    color: #d5db81;
     margin-bottom: 0;
     font-size: 12px;
     line-height: 20px;
@@ -1547,9 +1549,8 @@ ul.cont_info p {
 }
 
 .footer_copy_right p {
-    line-height: 80px;
     color: #7c7c7c;
-    font-size: 12px;
+    font-size: 6px;
     margin-bottom: 0;
 }
 
@@ -2751,6 +2752,9 @@ section#wrng_pg .btns a.orn_btn {
     .srch_frm .controls.col-md-3 {
         padding: 0;
     }
+    #srch_slide img{
+        height: 400px;
+    }
     .control-group.form-group.col-md-11 {
         padding: 0;
     }
@@ -3059,6 +3063,9 @@ section#wrng_pg .btns a.orn_btn {
     }
     .bannr_sec h4.sub_titl {
         font-size: 14px;
+    }
+     #srch_slide img{
+        height: 200px;
     }
     .slide-info {
         position: relative;
