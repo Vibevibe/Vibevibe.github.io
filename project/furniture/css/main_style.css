@@ -565,7 +565,7 @@ header.bread_crumb .pag_titl_sec {
 }
 
 h1.pag_titl {
-    color: #F04A24;
+    color: #ef6040;
     text-transform: uppercase;
     text-shadow: 0px 1px 3px #333;
 }
@@ -584,7 +584,7 @@ h1.pag_titl {
 }
 
 .pg_links {
-    background: #f04a24;
+    background: #ef6040;
 }
 
 .pg_links p.lnk_pag,
@@ -592,6 +592,7 @@ h1.pag_titl {
     color: #fff;
     display: inline-block;
     margin-bottom: 0;
+    font-weight: bold;
     line-height: 44px;
     text-transform: uppercase;
 }
