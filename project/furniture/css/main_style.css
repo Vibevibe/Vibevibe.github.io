@@ -444,7 +444,9 @@ h4.sub_titl {
     top: 95px;
     z-index: 100;
 }
-
+#banner .sub_titl{
+    color: white;
+}
 .bannr_sec2 {
     padding: 0px 0px;
     margin: 0px auto;
