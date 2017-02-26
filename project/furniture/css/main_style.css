@@ -292,7 +292,7 @@ nav.navbar {
 a.navbar-brand {
     height: auto;
     padding: 10px 15px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .navbar-collapse {
@@ -300,17 +300,16 @@ a.navbar-brand {
 }
 
 ul.nav.navbar-nav.navbar-right {
-    margin: 30px 0;
-    padding: 0 20px;
-/*    background: #EDBB48;*/
-}
-
-ul.nav.navbar-nav.navbar-right li {
+    margin: 20px 0;
     padding: 0 15px;
 }
 
+ul.nav.navbar-nav.navbar-right li {
+    padding: 0 10px;
+}
+
 .navbar-nav > li > a {
-    padding: 22px 5px;
+    padding: 20px 4px;
     color: #563232;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
@@ -329,7 +328,7 @@ ul.nav.navbar-nav.navbar-right li {
 
 .navbar-toggle {
     background-color: #aaa;
-    margin: 40px 30px;
+    margin: 30px 20px;
 }
 
 .navbar-toggle:hover {
@@ -426,11 +425,10 @@ h4.sub_titl {
     margin-bottom: 0;
     display: block;
     text-align: center;
-    text-shadow: 1px 1px 3px black;
-    color:#fff;
+    color:#333;
     font-style: italic;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .bannr_sec img {
@@ -567,7 +565,7 @@ header.bread_crumb .pag_titl_sec {
 h1.pag_titl {
     color: #ef6040;
     text-transform: uppercase;
-    text-shadow: 0px 1px 3px #333;
+    font-weight: bold;
 }
 
 .pag_titl_sec h1.pag_titl {
@@ -2925,10 +2923,8 @@ section#wrng_pg .btns a.orn_btn {
     }
     .footer_copy_right .col-sm-6 {
         text-align: center;
-        padding: 30px 0;
     }
     .footer_copy_right p {
-        line-height: normal;
     }
     .footer_copy_right .col-sm-6.text-left {
         padding-bottom: 0;
@@ -3022,27 +3018,6 @@ section#wrng_pg .btns a.orn_btn {
     .call_sec {
         width: 100%;
         padding: 60px 30px;
-    }
-    .navbar-nav > li > ul.dropdown-menu {
-        position: absolute;
-        display: block;
-        width: 100%;
-        float: none;
-        background-color: #ddd;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s ease all;
-        border: none;
-    }
-    .navbar-nav > li:hover .dropdown-menu {
-        visibility: visible;
-        opacity: 1;
-        position: relative;
-    }
-    .navbar-nav > li > ul.dropdown-menu a {
-        text-align: center;
-        line-height: 1;
-        padding: 22px 15px;
     }
 }
 
@@ -3153,7 +3128,7 @@ section#wrng_pg .btns a.orn_btn {
         font-size: 11px;
     }
     .footer_copy_right p {
-        font-size: 11px;
+        font-size: 6px;
     }
     .row.prlist_sec .col-md-6 {
         margin-bottom: 30px;
