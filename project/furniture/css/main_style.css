@@ -890,7 +890,7 @@ section#srch_slide {
 }
 
 #srch_slide img{
-    height: 500px;
+/*    height: 500px;*/
 }
 
 .slide-info {
@@ -1009,7 +1009,6 @@ section#srch_slide {
     border-bottom: 2px solid transparent;
 }
 .panel-image img{
-    height: 240px;
 }
 
 .sal_labl {
@@ -1126,7 +1125,7 @@ h3.sec_titl {
     font-size: 16px;
     text-transform: uppercase;
     color:#A6805B;
-    margin-bottom: 20px;
+    height: 30px;
 }
 
 h3.sec_titl a {
@@ -1143,6 +1142,8 @@ p.sec_desc {
     color: #563232;
     line-height: 21px;
     margin-bottom: 20px;
+    height: 150px;
+    overflow-y: auto;
 }
 
 section#feat_propty .col-md-4 {
@@ -1408,7 +1409,6 @@ section#clients .owl_col {
 }
 
 section#clients .owl_col .mid_img {
-    width: 200px;
     height: 200px;
     background: transparent;
     border: 1px solid #e6e9ea;
@@ -1419,7 +1419,6 @@ section#clients .owl_col .mid_img {
 section#clients .owl_col .mid_img img {
     margin: 0 auto;
     width: 95%;
-    height: 200px;
 }
 
 
