@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,12 +12,12 @@
        <header>
            <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-mg-12">
                         <nav>
                             <ul>
-                                <li><a class="active" href="#billboard">Обо мне </a></li>
-                                <li><a href="#porf">Мои работы </a></li>
-                                <li><a href="#call">Как связаться </a></li>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Работы</a></li>
+                                <li><a href="#">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -29,50 +29,55 @@
   <section id="billboard">
       <div class="container">
        <div class="row">
-                   <div class="col-md-8 col-md-offset-2">
-                          <h2>Всем привет.</h2>
-                       <p>Меня зовут Данил и возможно вы сразу подумали о том же, о чем и я.Какой дебил ставит чашку с кофе на макбук?</p>
-                   </div>
+                   
                 </div>
                 </div>
   </section>
   <section id="porf">
       <div class="container">
           <div class="row">
-              <div class="col-md-12">
-                  <h2>Мои работы:</h2>
-              </div>
-          </div>
-          <div class="row clearfix">
-              <div class="col-md-3 col-md-offset-3">
-                 <div class="block">
-                      <img src="%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg" alt="">
-                      <p><a href="project/clining/index.html">Сайт клининговой компании</a></p>
-                  </div>
-              </div>
-              <div class="col-md-3">
+              <div class="col-md-6">
                   <div class="block">
-                      <img src="" alt="">
-                      <p><a href="project/furniture/index.html">Сайт мебели</a></p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <img src="%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0.jpg" alt="">
+                          </div>
+                          <div class="col-md-6">
+                              <a href="#">
+                              <h2>Сайт клининговой компании</h2>
+                              </a>
+                              <p>Адаптивный макет. В работе использовал:</p>
+                              <ul>
+                                  <li>Bootstrap 3</li>
+                                  <li>JQuery</li>
+                                  <li>Какая то карусель</li>
+                              </ul>
+                              <a href="project/clining/index.html" class="button">Посмотреть</a>
+                          </div>
+                      </div>
                   </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-6">
                   <div class="block">
-                      <img src="%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0.jpg" alt="">
-                      <p>Первая работа</p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <img src="%D0%B8%D0%B7-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B0.jpg" alt="">
+                          </div>
+                          <div class="col-md-6">
+                              <a href="#">
+                              <h2>Сайт мебели</h2>
+                              </a>
+                              <p>Адаптивный макет. В работе использовал:</p>
+                              <ul>
+                                  <li>Bootstrap 3</li>
+                                  <li>JQuery</li>
+                                  <li>Lity</li>
+                                  <li>Owl-carousel</li>
+                              </ul>
+                              <a href="project/furniture/index.html" class="button">Посмотреть</a>
+                          </div>
+                      </div>
                   </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-3 col-md-offset-3">
-                 <div class="block">
-<!--
-                      <img src="%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg" alt="">
-                      <p>Сайт клининговой компании</p>
--->
-                  </div>
-              </div>
-             
               </div>
           </div>
       </div>
@@ -80,38 +85,16 @@
   <section id="call">
       <div class="container">
           <div class="row">
-             <h2>Как со мной связаться</h2>
-             <p>Если вы хотите связаться со мной, то вот мои контакты в различных социальных сетях и не только</p>
-              <div class="col-md-4">
-                  <a href="#">
-                      <i class="fa fa-vk" aria-hidden="true"></i>
-                  </a>
-              </div>
-              <div class="col-md-4">
-                 <a href="#">
-                     <i class="fa fa-git" aria-hidden="true"></i>
-                 </a> 
-              </div>
-              <div class="col-md-4">
-                 <a href="#">
-                     <i class="fa fa-google-plus" aria-hidden="true"></i>
-                 </a> 
-              </div>
+            
           </div>
       </div>
   </section>
   <footer>
       <div class="container">
           <div class="row">
-              <div class="col-md-4">
-                  <p>Все права защищены</p>
-              </div>
-              <div class="col-md-4">
-                  <p>(c) Vibe</p>
-              </div>
-              <div class="col-md-4">
-                  <p>2k17</p>
-              </div>
+             <div class="col-md-12">
+                 <p>(c) 2017 |  Powered by <a href="">Danil Storozhuk</a></p>
+             </div>
           </div>
       </div>
   </footer>
