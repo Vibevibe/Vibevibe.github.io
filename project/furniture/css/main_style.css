@@ -1009,6 +1009,7 @@ section#srch_slide {
     border-bottom: 2px solid transparent;
 }
 .panel-image img{
+    margin: 0 auto;
 }
 
 .sal_labl {

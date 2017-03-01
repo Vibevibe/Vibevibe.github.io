@@ -70,11 +70,34 @@ nav a.active{
     background-color: #f7f7f7;
     padding: 15px;
 }
+#bill{
+    background-color: #1ccacd;
+    color: white;
+    border-top: 2px solid #1cc4cd; 
+    padding: 60px;
+    text-align: center;
+}
+#bill h1{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+    opacity: .9;
+    transition: .7s;
+}
+.block{
+    height: 300px;
+    overflow: hidden;
+}
+#bill h1:hover{
+    opacity: 1;
+}
+#bill p{
+    font-size: 20px;
+}
 #porf img{
     width: 100%;
     border-right: 2px solid #ccc;
     padding-right: 5px;
-    height: 300px;
 }
 .block{
     border: 1px dotted #ccc;
@@ -111,4 +134,7 @@ footer{
     background-color: #1f1f1f;
     color: #1ccacd;
     text-align: center;
+}
+footer p{
+    opacity: .8;
 }
