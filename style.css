@@ -69,6 +69,7 @@ header:hover p {
 }
 
 #porf a:hover img{
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 #porf a:hover .block{
@@ -89,6 +90,7 @@ header:hover p {
     bottom: 0;
     z-index: 1;
     color: white;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 .name{
@@ -96,6 +98,7 @@ header:hover p {
     top: 25%;
 left: 15%;
 right: 15%;
+    -webkit-transition: 1s;
     transition: 1s;
     opacity: 0;
     font-size: 20px;
@@ -106,11 +109,13 @@ right: 15%;
 header p{
     font-size: 20px;
     opacity: .8;
+    -webkit-transition: .5s;
     transition: .5s;
     line-height: 1.25em;
 }
 #porf img{
     width: 100%;
+    -webkit-transition: .5s;
     transition: .5s;
     padding: 5px;
     min-height: 200px
