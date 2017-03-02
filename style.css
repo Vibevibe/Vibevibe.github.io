@@ -66,6 +66,7 @@ header:hover p {
     overflow: hidden;
     position: relative;
     min-height: 200px;
+    margin-top: 15px;
 }
 
 #porf a:hover img{
