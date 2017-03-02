@@ -239,12 +239,12 @@ Iframe {width: 100%; border: none;}
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 button.btn-primary {
-    background: #f04a24 !important;
+    background:  #EDBB48!important;
     transition: 0.4s ease all;
 }
 
 button.btn-primary:hover {
-    background: #DD6443 !important;
+    background: #f04a24 !important;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -321,8 +321,8 @@ ul.nav.navbar-nav.navbar-right li {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a.active {
-    color: #f04a24;
-    border-bottom: 2px solid #f04a24;
+    color: #EDBB48;
+    border-bottom: 2px solid #EDBB48;
     background: transparent;
 }
 
@@ -565,7 +565,7 @@ header.bread_crumb .pag_titl_sec {
 }
 
 h1.pag_titl {
-    color: #ef6040;
+    color: #EDBB48;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -584,7 +584,7 @@ h1.pag_titl {
 }
 
 .pg_links {
-    background: #ef6040;
+    background:#EDBB48;
 }
 
 .pg_links p.lnk_pag,
@@ -1070,11 +1070,11 @@ section#feat_propty .panel.panel-default:hover a.btn.btn_trans {
 }
 
 section#feat_propty .panel.panel-default:hover .panel-image {
-    border-bottom: 2px solid #f04a24;
+    border-bottom: 2px solid #EDBB48;
 }
 
 section#feat_propty .panel.panel-default:hover h3.sec_titl {
-    color: #f04a24;
+    color: #EDBB48;
 }
 
 .row.prlist_sec .panel.panel-default:hover .img_hov_eff {
@@ -1087,11 +1087,11 @@ section#feat_propty .panel.panel-default:hover h3.sec_titl {
 }
 
 .row.prlist_sec .panel.panel-default:hover .panel-image {
-    border-bottom: 2px solid #ef7351;
+    border-bottom: 2px solid #EDBB48;
 }
 
 .row.prlist_sec .panel.panel-default:hover h3.sec_titl {
-    color: #ef7351;
+    color:#EDBB48;
 }
 
 .panel-body {
@@ -1171,18 +1171,18 @@ section#feat_propty .panel-body {
 
 .panel_bottom p.price {
     font-size: 13px;
-    color: #f04a24;
+    color: #EDBB48;
     font-weight: bold;
     line-height: 35px;
 }
 .shop_bill p.readmore a{
-    color: #f04a24;
+    color: #EDBB48;
     margin-right: 15px;
     float: right;
     transition: .5s;
 }
 .shop_bill p.readmore a:hover{
-    color: #563232
+    color: #f04a24;
 }
 p.readmore a {
     color: white;
@@ -1697,7 +1697,7 @@ p.readmore2 a {
 
 .pagin ul li a.active,
 .pagin ul li a:hover {
-    background: #f04a24;
+    background: #EDBB48;
     color: #fff;
 }
 
@@ -2346,12 +2346,12 @@ section#abt_sec .titl_sec {
     line-height: 66px;
     text-align: center;
     font-size: 24px;
-    color: #ef7351;
+    color: #EDBB48;
 }
 
 h3.fun_num {
     font-size: 20px;
-    color: #F04A24;
+    color: #EDBB48;
     text-transform: uppercase;
     line-height: 1;
     margin: 20px 0 10px;
@@ -2679,7 +2679,7 @@ section#wrng_pg .btns a.orn_btn {
 
 .order{
     text-align: center;
-    background: #F04A24;
+    background: #EDBB48;
     color: white;
     transition: .5s;
     line-height: 35px;
@@ -2689,7 +2689,7 @@ section#wrng_pg .btns a.orn_btn {
 .order:hover{
     background: #fff; 
     color: white;
-    border-color: #F04A24;
+    border-color: #EDBB48;
 }
 .readmore_link{
     display: block;
@@ -2913,13 +2913,16 @@ section#wrng_pg .btns a.orn_btn {
     }
     ul.nav.navbar-nav.navbar-right li {
         padding: 0;
-        border-bottom: 2px solid #dedede;
+        border-bottom: 2px solid #EDBB48;
     }
     ul.nav.navbar-nav.navbar-right li:hover {
         border-bottom-color: transparent;
     }
     .navbar-nav > li > a {
         border-color: transparent;
+    }
+    .navbar-nav li a:hover, .navbar-nav li a.active{
+        border-bottom: none;
     }
     .navbar > .container .navbar-brand {
         float: left;
