@@ -2696,6 +2696,11 @@ section#wrng_pg .btns a.orn_btn {
     color: #F04A24;
     line-height: 35px;
 }
+.skill_sec img{
+    width: 99%;
+    margin-top: 5px;
+    
+}
 /* 23. Responsive Styles 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -2966,7 +2971,7 @@ section#wrng_pg .btns a.orn_btn {
     .agen_info .col-md-8 {
         padding: 0;
     }
-    .agen_info .panel_bottom {
+    .panel_bottom {
         margin: 10px -15px 0;
     }
     section#agent_sec .row.agen_desc .col-md-8 {

@@ -46,95 +46,23 @@ table {
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 header{
     background-color: #1ccacd;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
 }
-nav li{
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 15px;
-    font-size: 16px;
+header h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
-nav a{
-    color: white;
+header:hover p {
+    opacity: 1;
+}
+header p{
+    font-size: 20px;
     opacity: .8;
     transition: .5s;
-}
-nav a:hover,
-nav a.active{
-    opacity: 1;
-    color: white;
-}
-#porf{
-    background-color: #f7f7f7;
-    padding: 15px;
-}
-#bill{
-    background-color: #1ccacd;
-    color: white;
-    border-top: 2px solid #1cc4cd; 
-    padding: 60px;
-    text-align: center;
-}
-#bill h1{
-    font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 15px;
-    opacity: .9;
-    transition: .7s;
-}
-.block{
-    height: 300px;
-    overflow: hidden;
-}
-#bill h1:hover{
-    opacity: 1;
-}
-#bill p{
-    font-size: 20px;
-}
-#porf img{
-    width: 100%;
-    border-right: 2px solid #ccc;
-    padding-right: 5px;
-}
-.block{
-    border: 1px dotted #ccc;
-    padding: 5px;
-}
-#porf h2{
-    color: #222;
-    font-weight: bold;
-    font-size: 20px;
-}
-#porf p{
-    color: #222;
-    font-size: 14px;
-    margin: 20px 0;
-}
-#porf ul{
-    list-style: circle;
-}
-#porf ul li{
-    margin: 5px 0;
-    font-weight: bold;
-    margin-left: 20px;
-}
-#porf .button{
-    display: inline-block;
-    color: #1ccacd;
-    border: 1px solid #1ccacd;
-        padding: 10px 15px;
-    float: right;
-    margin-top: 15px;
-}
-footer{
-    padding: 15px;
-    background-color: #1f1f1f;
-    color: #1ccacd;
-    text-align: center;
-}
-footer p{
-    opacity: .8;
+    line-height: 1.25em;
 }
