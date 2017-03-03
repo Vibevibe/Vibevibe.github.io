@@ -1,0 +1,472 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*===================================*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #f5f5f5;
+}
+nav li{
+    float: left;
+}
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #2679ff;
+    line-height: 60px;
+}
+nav{
+    float: right;
+}
+.bar{
+    font-size: 30px;
+    background-color: #ccc;
+    display: block;
+    padding: 10px 13px;
+    border-radius: 50%;
+    float: right;
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: -55px;
+    color: #2679ff;
+}
+.bar.active{
+    color:white;
+    background-color:black;
+}
+nav li a{
+    line-height: 60px;
+    display: block;
+    padding: 0px 30px;
+    color: #2679ff;
+    transition: .5s;
+}
+nav li a:hover{
+    color: white;
+    background-color: #2679ff;
+    text-decoration: none;
+}
+.news_container{
+    background-color: #f5f5f5;
+}
+.news_container p{
+    line-height: 1.25em;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 70px auto;
+}
+.about{
+    text-align: center;
+    width: 60%;
+    margin: 50px auto;
+}
+.news{
+    margin: 15px 0;
+    background-color: #fff;
+    border: 1px solid #ccc
+}
+.news h2{
+    font-size: 30px;
+    font-weight: bold;
+    float: right;
+    display: block;
+    line-height: 60px;
+    padding: 0 30px;
+}
+.news a{
+    color: #08142b;
+    text-align: right;
+}
+.news img{
+    width: 100%;
+    display: block;
+    
+    
+}
+.news p{
+    padding: 10px;
+}
+a.data{
+    display: inline-block;
+    color: #e1e1e1;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+a.data:hover{
+    color: #ccc;
+}
+.readmore{
+    display: inline-block;
+    border: 2px solid #2679ff;
+    padding: 10px;
+    margin-top: 15px;
+    float: right;
+    transition: .5s;
+    margin: 10px 10px 10px 0;
+}
+.readmore:hover{
+    border: 2px solid #2679ff;
+    color: white;
+    background-color: #2679ff;
+    text-decoration: none;
+
+}
+.pag li{
+    display: inline-block;
+    margin: 10px;
+}
+.pag a{
+    display: inline-block;
+    border: 1px dotted #2679ff;
+    padding: 10px 15px;
+    transition: .5s;
+    background-color: #fff;
+}
+.pag a:hover{
+    border: 1px solid #2679ff;
+    color: white;
+    background-color: #2679ff;
+    text-decoration: none;
+}
+.pag{
+    text-align: center;
+}
+.pag li:first-child{
+    float: left;
+}
+.pag li:last-child{
+    float: right;
+}
+.footer-top{
+    background-color: #222222;
+    color: #f5f5f5;
+    padding: 15px;
+    font-size: 12px;
+}
+footer h3{
+    font-size: 25px;
+    line-height: 60px;
+    border-bottom: 2px solid #e1e1e1;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+footer ul{
+    margin-left: 20px;
+}
+footer li{
+    margin: 10px 0;
+}
+footer input{
+    width: 100%;
+    margin: 5px 0;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    padding: 5px;
+}
+footer textarea{
+    width: 100%;
+     background: transparent;
+     margin-bottom: 5px;
+     border: 2px solid #f5f5f5;
+     padding: 5px;
+}
+footer button{
+    margin: 0 auto;
+    display: block;
+     background: transparent;
+     border: 2px solid #f5f5f5;
+     padding: 5px;
+
+}
+footer a{
+    color: #f5f5f5;
+    font-size: 14px;
+}
+.contact{
+    margin-top: 15px; 
+    margin-left: 20px;
+}
+.contact_a li a i{
+     padding-right: 10px; 
+
+}
+.contact a{
+    font-size: 16px;
+    margin-right: 10px;
+}
+.footer-bot{
+    background-color: #000;
+    color: #666;
+    padding: 15px 0;
+    text-align: center;
+}
+.webdev{
+    background: url(../img/new.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+}
+.porf{
+    padding: 50px;
+    background: url(https://cdn.pixabay.com/photo/2016/11/29/08/41/apple-1868496_960_720.jpg) no-repeat center center;
+    background-size: cover;
+}
+.webdev .about,
+.porf .about{
+    background-color: rgba(245,245, 245, .9);
+    padding: 50px;
+}
+.sidebar ul{
+    width: 70%;
+     margin: 10px auto;
+    border: 1px solid #ccc;
+}
+.sidebar li{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar li a{
+    line-height: 40px;
+    color: #2679ff;
+    display: block;
+    padding: 10px;
+    transition: .5s;
+}
+.sidebar li:last-child{
+    border: none;
+}
+.sidebar li a:hover,
+.sidebar li a.active{
+    color: white;
+    background-color: #2679ff;
+    text-decoration: none;
+}
+.portfolio{
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+.portfolio img{
+    width: 100%;
+    height: 300px;
+}
+.portfolio p{
+    font-size: 14px;
+}
+.portfolio .news{
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .news h4{
+    opacity: 0;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.block{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s;
+}
+.block a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s;
+    color: white;
+}
+.portfolio .news:hover .block{
+    background-color: rgba(34,34, 34, .9);
+}
+.portfolio .news:hover .block a{
+    top: 60%;
+}
+.portfolio .news .enter{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: -100%;
+    transition: .5s;
+    display: inline-block;
+    left: 43%;
+    right: 43%;
+}
+.portfolio .news:hover .enter{
+    top: 60%;
+    z-index: 1;
+}
+.portfolio .news:hover h4{
+    opacity: 1;
+    bottom: 60%;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #ccc
+}
+.acticle{
+    background-color: #fff;
+}
+@media (max-width: 991px){
+
+    nav{
+        float: left;
+        /*margin-top: 15px;*/
+    }
+
+    nav li a{
+    line-height: 60px;
+    display: block;
+    padding: 0px 25px;
+    color: #2679ff;
+    transition: .5s;
+}    
+.portfolio .news .enter{
+        left: 45%;
+        right: 47%;
+    }
+    .portfolio img{
+    width: 100%;
+    height: auto;
+}
+}
+@media (max-width: 771px){
+    .bar{
+        display: block;
+    }
+    nav{
+        float: none;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li{
+        float: none;
+    }
+    nav li a{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #2679ff;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .about{
+        font-size: 14px;
+        margin: 15px auto;
+    }
+    .news h2{
+        font-size: 20px;
+        float: none;
+    }
+    .news p{
+        font-size: 14px;
+    }
+    a.data{
+        float: right;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .news a.readmore{
+        font-size: 14px;
+        margin: 5px;
+        width: 95%;
+        text-align: center;
+    }
+    h1{
+        margin: 15px auto;
+        width: 100%;
+    }
+    .porf{
+        padding: 10px;
+    }
+    .webdev .about, .porf .about{
+        padding: 10px;
+        width: 100%;
+    }
+    .sidebar ul{
+        width: 100%;
+    }
+    .sidebar li a{
+        line-height: 20px;
+        padding: 5px;
+    }
+    /*.portfolio .news .enter{
+        left: 43%;
+        right: 43%;
+    }*/
+}
+
+@media(max-width: 580px){
+    .pag li{
+        display: none;
+    }
+    .pag li:first-child{
+        display: block;
+}
+.pag li:last-child{
+    display: block;
+    
+}
+}
