@@ -45,18 +45,19 @@ table {
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
 }
 header{
-    background-color: #1ccacd;
-    color: #f2f2f2;
+    color: #171717;
     text-align: center;
     padding: 50px;
     margin-bottom: 15px;
 }
 header h1{
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 15px;
     font-weight: bold;
+    margin-top: 30px;
 }
 header:hover p {
     opacity: 1;
@@ -82,30 +83,19 @@ header:hover p {
 #porf a:hover .desk{
     background: rgba(0,0,0,.7);
 }
-.desk{
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+    
 }
-.name{
-    position: absolute;
-    top: 25%;
-left: 15%;
-right: 15%;
-    -webkit-transition: 1s;
-    transition: 1s;
-    opacity: 0;
-    font-size: 20px;
-}
-#porf a:hover .name{
-   opacity: 1;
+.v{
+    background-color: #171717;
+    color: #f6f6f6;
+    padding: 5px 10px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 header p{
     font-size: 20px;
@@ -114,13 +104,104 @@ header p{
     transition: .5s;
     line-height: 1.25em;
 }
-#porf img{
-    width: 100%;
-    -webkit-transition: .5s;
-    transition: .5s;
-    padding: 5px;
-    min-height: 200px
-}
 .material-icons{
     font-size: 48px;
+}
+.grid-item img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 25%;
+}
+
+
+.grid-item {
+  height: 120px;
+  float: left;
+}
+
+.grid-item--width2
+{ width:  50%; }
+.grid-item--width3 { width:  75%; }
+
+.grid-item--height2,
+.grid-item--height2 img{ height: 200px; }
+.grid-item--height3,
+.grid-item--height3 img{ height: 300px; }
+.grid-item--height4,
+.grid-item--height4 img{ height: 400px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #222222;
+    color: #d3d3d3;
+    padding: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+footer a{
+    font-size: 20px;
+     color: #d3d3d3;
+    display: inline-block;
+    margin: 0 15px;
+}
+.copy{
+    margin-top: 10px;
+}
+
+
+@media (max-width: 990px){
+    .grid-sizer,
+.grid-item {
+  width: 33.3%;
+}
 }
