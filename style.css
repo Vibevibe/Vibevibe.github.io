@@ -101,7 +101,7 @@ header p{
 
 
 .grid-item {
-  height: 120px;
+  height: 150px;
   float: left;
 }
 
@@ -110,63 +110,17 @@ header p{
 .grid-item--width3 { width:  75%; }
 
 .grid-item--height2,
-.grid-item--height2 img{ height: 200px; }
+.grid-item--height2 img{ height: 150px; }
 .grid-item--height3,
 .grid-item--height3 img{ height: 300px; }
 .grid-item--height4,
 .grid-item--height4 img{ height: 400px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     background-color: #222222;
     color: #d3d3d3;
     padding: 30px;
-    margin-top: 25px;
+    margin-top: 35px;
     text-align: center;
 }
 footer a{
@@ -183,6 +137,48 @@ footer a{
 @media (max-width: 990px){
     .grid-sizer,
 .grid-item {
-  width: 33.3%;
+  width: 50%;
 }
+
+
+.grid-item {
+  height: 60px;
+  float: left;
+}
+
+.grid-item--width2
+{ width:  50%; }
+.grid-item--width3 { width:  100%; }
+
+.grid-item--height2,
+.grid-item--height2 img{ height: 150px; }
+.grid-item--height3,
+.grid-item--height3 img{ height: 250px; }
+.grid-item--height4,
+.grid-item--height4 img{ height: 300px; }
+}
+
+
+@media (max-width: 500px){
+    .grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
+
+.grid-item {
+  height: 60px;
+  float: left;
+}
+
+.grid-item--width2
+{ width:  100%; }
+.grid-item--width3 { width:  100%; }
+
+.grid-item--height2,
+.grid-item--height2 img{ height: 150px; }
+.grid-item--height3,
+.grid-item--height3 img{ height: 150px; }
+.grid-item--height4,
+.grid-item--height4 img{ height: 300px; }
 }
